@@ -1,0 +1,77 @@
+*{
+    text-align: center;
+    text-decoration: none;
+    list-style: none;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
+/*//////////////////////// 공통적용//////////////////// */
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+li img, li a{
+    display: block;
+}
+p{
+    text-align: center;
+    font-size: 50px;
+    margin-top: 1em;
+}
+/*////////////////////// 공통적용/////////////////////// */
+
+
+/*/////////////////////// 1번째 적용 //////////////////////*/
+#TopBanner{
+    overflow: hidden;
+    height: 350px;
+}
+#TopBanner ul{
+    display: block;
+}
+#TopBanner li{
+    display: block;
+}
+/* ///////////////////////1번째 적용/////////////////////// */
+
+
+/* //////////////////2번째 적용 //////////////////////////*/
+#SideBanner{
+    overflow: hidden;
+    height: 350px;
+}
+#SideBanner ul{
+    width: 10000px;
+    display: flex;
+}
+#SideBanner li a{
+    display: block;
+}
+#SideBanner li img{
+    display: block;
+}
+/* ///////////////////////2번째 적용///////////////////// */
+
+
+
+/* ////////////////////////3번째 적용//////////////////// */
+#FadeBanner{
+    overflow: hidden;
+    width: 1200px;
+    height: 350px;
+    position: relative;
+}
+#FadeBanner li{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.6s;
+    visibility: hidden;
+}
+#FadeBanner li.on{
+    z-index: 1;
+    opacity: 1;
+    visibility: visible;
+}
